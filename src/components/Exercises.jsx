@@ -7,8 +7,8 @@ import ExerciseCard from './ExerciseCard';
 import Loader from './Loader';
 
 const Exercises = ({ exercises, setExercises, bodyPart }) => {
-  const [currentPage, setCurrentPage] = useState([1]);
-  const [exercisesPerPage] = useState([3]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [exercisesPerPage] = useState(6);
 
   useEffect(() => {
     const fetchExercisesData = async () => {
